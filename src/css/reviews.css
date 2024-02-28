@@ -18,13 +18,13 @@ h6 {
   margin-bottom: 0;
 }
 
-.container {
+.reviews-container {
   width: 100%;
-  width: 375px;
-  margin: 0 auto;
+  max-width: 375px;
+  padding: 0 20px;
 }
 
-.section {
+.reviews-section {
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -95,12 +95,12 @@ h6 {
 }
 
 @media screen and (min-width: 768px) {
-  .section {
+  .reviews-section {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
-  .container {
+  .reviews-container {
     width: 100%;
     max-width: 768px;
     padding: 0 32px;
@@ -149,7 +149,7 @@ h6 {
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .reviews-container {
     width: 100%;
     max-width: 1280px;
     padding: 0 100px;
