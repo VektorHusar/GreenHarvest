@@ -50,7 +50,6 @@ h6 {
 .reviews-description {
   font-size: 14px;
   line-height: 1.28;
-  letter-spacing: -0.015em;
   margin-bottom: 40px;
 }
 
@@ -83,7 +82,7 @@ h6 {
   color: #040306;
   font-weight: 600;
   line-height: 1.25;
-  letter-spacing: -0.32px;
+  letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
 
@@ -120,7 +119,6 @@ h6 {
     max-width: 553px;
     font-size: 16px;
     line-height: 1.28;
-    letter-spacing: -0.015em;
     margin-bottom: 50px;
   }
 
