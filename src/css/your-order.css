@@ -38,6 +38,7 @@ textarea {
 }
 
 .form-title {
+    width: 294px;
     color: var(--sec-text-color);
     font-size: 24px;
     font-weight: 600;
@@ -66,11 +67,44 @@ textarea {
     background-color: transparent;
     outline: transparent;
     width: 100%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .form-input:focus,
 .textarea-input:focus {
     border-color: var(--sec-bg-color);
+}
+
+.form-input:not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+.form-input:not(:placeholder-shown):valid {
+    border-color: green;
+}
+
+.text-valid,
+.text-invalid {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-top: 4px;
+    display: none;
+}
+
+.text-valid {
+    color: green;
+}
+
+.text-invalid {
+    color: red;
+}
+
+.form-input:not(:placeholder-shown):valid~.text-valid {
+    display: block;
+}
+
+.form-input:not(:placeholder-shown):invalid~.text-invalid {
+    display: block;
 }
 
 input::placeholder,
@@ -95,6 +129,7 @@ textarea::placeholder {
     outline: transparent;
     min-height: 91px;
     padding: 14px 16px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .form-btn {
@@ -114,6 +149,12 @@ textarea::placeholder {
     letter-spacing: -0.015em;
     text-transform: uppercase;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+    background-color: #4d5e2b;
 }
 
 .follows-box {
@@ -123,7 +164,7 @@ textarea::placeholder {
     align-items: flex-start;
     gap: 20px;
     border-radius: 30px;
-    background: #576F35;
+    background: var(--main-bg-color);
 }
 
 .its-border {
@@ -153,6 +194,12 @@ textarea::placeholder {
     font-weight: 600;
     line-height: 1.08;
     letter-spacing: -0.015em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.follows-link:hover,
+.follows-link:focus {
+    color: var(--sec-text-color);
 }
 
 @media screen and (min-width:768px) {
