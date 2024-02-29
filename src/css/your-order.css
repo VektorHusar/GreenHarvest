@@ -27,10 +27,7 @@ textarea {
     color: var(--main-text-color);
     font-size: 14px;
     line-height: 1.29;
-}
-
-.form-and-follows {
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .form-box {
@@ -41,7 +38,7 @@ textarea {
 }
 
 .form-title {
-    color: #141414;
+    color: var(--sec-text-color);
     font-size: 24px;
     font-weight: 600;
     line-height: 1.08;
@@ -58,13 +55,9 @@ textarea {
     color: var(--main-bg-color);
 }
 
-.your-order-form {}
-
 .form-group {
     margin-bottom: 15px;
 }
-
-.form-label {}
 
 .form-input {
     padding: 14px 0 14px 16px;
@@ -82,7 +75,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-    color: #141414;
+    color: var(--sec-text-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.29;
@@ -92,8 +85,6 @@ textarea::placeholder {
 .textarea {
     margin-bottom: 20px;
 }
-
-.textarea-label {}
 
 .textarea-input {
     border-radius: 15px;
@@ -140,11 +131,6 @@ textarea::placeholder {
     background: linear-gradient(0deg, rgba(20, 20, 20, 0.30) 0%, rgba(20, 20, 20, 0.30) 100%), url(<path-to-image>), lightgray -22.226px -131.44px / 126.966% 163.736% no-repeat;
 }
 
-.follows-box>picture {
-    border-radius: 15px;
-    background: linear-gradient(0deg, rgba(20, 20, 20, 0.30) 0%, rgba(20, 20, 20, 0.30) 100%), url(<path-to-image>), lightgray -22.226px -131.44px / 126.966% 163.736% no-repeat;
-}
-
 .follows-text {
     color: rgba(251, 251, 251, 0.50);
     font-size: 14px;
@@ -162,6 +148,7 @@ textarea::placeholder {
 
 .follows-link,
 .slash {
+    color: var(--main-text-color);
     font-size: 24px;
     font-weight: 600;
     line-height: 1.08;
@@ -169,37 +156,30 @@ textarea::placeholder {
 }
 
 @media screen and (min-width:768px) {
-    /* section {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .container {
-        max-width: 768px;
-        padding: 0;
-    } */
-
-    .title-box {
-        padding: 0 96px 0 32px;
-    }
 
     .your-order-title {
+        max-width: 640px;
         font-size: 64px;
         line-height: 1;
         margin-bottom: 25px;
     }
 
     .your-order-text {
+        max-width: 640px;
         font-size: 16px;
         line-height: 1.25;
         margin-bottom: 50px;
     }
 
     .form-and-follows {
-        padding: 0 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .form-box {
+        max-width: 628px;
         padding: 50px 100px;
         margin-bottom: 25px;
     }
@@ -211,7 +191,6 @@ textarea::placeholder {
 
     .form-input {
         padding: 16px;
-        /* max-width: 428px; */
     }
 
     input::placeholder,
@@ -225,18 +204,17 @@ textarea::placeholder {
     }
 
     .textarea-input {
-        /* max-width: 428px; */
         min-height: 95px;
         padding: 16px 16px;
     }
 
     .form-btn {
-        /* max-width: 428px; */
         font-size: 18px;
         line-height: 1.11;
     }
 
     .follows-box {
+        max-width: 628px;
         gap: 50px;
         padding: 50px;
     }
@@ -260,25 +238,20 @@ textarea::placeholder {
 
 @media screen and (min-width:1280px) {
 
-    /* .container {
-        max-width: 1280px;
-        padding: 0 100px;
-    } */
-
     .title-box {
         padding: 0;
     }
 
     .your-order-title {
-        width: 751px;
+        max-width: 751px;
     }
 
     .your-order-text {
-        width: 742px;
+        max-width: 742px;
     }
 
     .form-and-follows {
-        display: flex;
+        flex-direction: row;
         gap: 24px;
         padding: 0;
     }
