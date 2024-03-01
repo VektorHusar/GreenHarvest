@@ -110,13 +110,12 @@ svg {
   background: var(--main-text-color);
 }
 .mobile-navigation-btn {
-  width: 159px;
-  height: 50px;
+  padding: 16px 41px;
   border: none;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0.02em;
-  font-weight: 500;
+  letter-spacing: 0.015em;
+  font-weight: 600;
   text-transform: uppercase;
   border-radius: 30px;
   background-color: var(--main-text-color);
@@ -192,8 +191,7 @@ svg {
     height: 40px;
   }
   .mobile-navigation-btn {
-    width: 163px;
-    height: 52px;
+    padding: 16px 41px;
     font-size: 18px;
     line-height: 20px;
   }
