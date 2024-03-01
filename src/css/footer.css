@@ -9,8 +9,14 @@
 }
 
 .logo-link-footer {
-  display: block;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  gap: 8px;
   margin-bottom: 14px;
+  fill: var(--main-text-color);
 }
 
 .logo-footer-text {
@@ -80,7 +86,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .logo-footer {
     width: 265px;
     font-size: 16px;
@@ -89,6 +94,11 @@
 
   .logo-link-footer {
     margin-bottom: 25px;
+  }
+
+  .logo-footer-icon {
+    width: 18px;
+    height: 18px;
   }
 
   .nav-footer {
@@ -133,10 +143,9 @@
 }
 
 @media screen and (min-width: 1280px) {
-
-    .footer {
-  padding: 50px 0;
-}
+  .footer {
+    padding: 50px 0;
+  }
 
   .logo-footer {
     margin-right: 302px;
@@ -155,7 +164,7 @@
   .address-footer-text {
     width: 215px;
   }
-  
+
   .list-link-footer {
     margin-right: 120px;
   }
