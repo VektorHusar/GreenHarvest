@@ -49,7 +49,6 @@ svg {
 }
 .bg-mobile-navigation-container {
   visibility: hidden;
-
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -160,16 +159,18 @@ svg {
     width: 40px;
     height: 40px;
   }
+
   .bg-mobile-navigation-container {
     background: rgba(20, 20, 20, 0.4);
-    width: 704px;
+    width: 832px;
     right: 50%;
     transform: translateX(50%);
   }
   .mobile-navigation-container {
     width: 351px;
-    transform: translateX(0);
+    transform: translateX(19%);
   }
+
   .btn-close {
     top: 42px;
     right: 42px;
