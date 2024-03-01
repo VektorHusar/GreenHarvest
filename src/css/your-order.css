@@ -38,7 +38,7 @@ textarea {
 }
 
 .form-title {
-    width: 294px;
+    max-width: 294px;
     color: var(--sec-text-color);
     font-size: 24px;
     font-weight: 600;
@@ -232,7 +232,7 @@ textarea::placeholder {
     }
 
     .form-title {
-        width: 100%;
+        max-width: 100%;
         margin-bottom: 50px;
     }
 
@@ -336,13 +336,14 @@ textarea::placeholder {
     right: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 20;
 }
 
 .thank-you {
     position: absolute;
-    max-width: 335px;
+    max-width: 300px;
     max-height: 308px;
-    padding: 70px 20px 40px;
+    padding: 60px 20px 50px;
     border-radius: 30px;
     background: #FBFBFB;
     display: flex;
@@ -364,12 +365,15 @@ textarea::placeholder {
 
 .close-icon-thank-you {
     stroke: #0D0D0D;
+    width: 30px;
+    height: 30px;
 }
 
 .thank-you-title {
     color: var(--sec-text-color);
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
+    line-height: 1;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     margin-bottom: 22px;
@@ -377,10 +381,11 @@ textarea::placeholder {
 
 .thank-you-text {
     color: var(--sec-text-color);
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: -0.01em;
     text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.01em;
 }
 
 .thank-you-text-red {
@@ -395,6 +400,20 @@ textarea::placeholder {
     .thank-you {
         max-width: 528px;
         padding: 75px 75px 85px;
+    }
+
+    .close-icon-thank-you {
+        width: 40px;
+        height: 40px;
+    }
+
+    .thank-you-title {
+        font-size: 32px;
+    }
+
+    .thank-you-text {
+        font-size: 24px;
+        font-weight: 600;
     }
 }
 
