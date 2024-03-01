@@ -1,13 +1,16 @@
-footer {
+.footer {
   background-color: var(--sec-bg-color);
   padding: 32px 0;
-  color: var(--main-text-color)
+  color: var(--main-text-color);
 }
 
 .logo-footer {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  width: 296px;
+}
+
+.logo-link-footer {
+  display: block;
+  margin-bottom: 14px;
 }
 
 .logo-footer-text {
@@ -22,10 +25,18 @@ footer {
   gap: 40px;
   margin-bottom: 80px;
 }
+
+.nav-address {
+  display: flex;
+  flex-direction: column;
+  width: 215px;
+}
+
 .list-link-footer {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  margin-bottom: 40px;
 }
 .item-link-footer {
   font-weight: 600;
@@ -50,31 +61,102 @@ footer {
   justify-content: space-between;
   font-weight: 500;
   font-size: 12px;
-  line-height: 133%;
+  line-height: 1.33;
   letter-spacing: -0.01em;
   color: rgba(251, 251, 251, 0.5);
 }
 
 .privacy-policy-links {
   display: flex;
+  gap: 8px;
 }
 
 .address-footer-text {
   width: 179px;
 }
 
- .logo-footer {
-    width: 296px;
-  }
+.logo-footer-icon {
+  fill: var(--main-text-color);
+}
 
-  .logo-footer-icon {
-    fill: var(--main-text-color);
-  }
+@media screen and (min-width: 768px) {
 
-  @media screen and (min-width: 768px) {
-
-   .logo-footer {
+  .logo-footer {
     width: 265px;
+    font-size: 16px;
+    line-height: 1.25;
   }
 
+  .logo-link-footer {
+    margin-bottom: 25px;
   }
+
+  .nav-footer {
+    justify-content: space-between;
+    margin-bottom: 100px;
+    gap: 0;
+  }
+
+  .privacy-policy {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .list-link-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 0;
+  }
+
+  .item-link-footer {
+    font-size: 32px;
+  }
+
+  .logo-footer-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .nav-address {
+    gap: 64px;
+  }
+
+  .address-footer {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .address-footer-text {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .footer {
+  padding: 50px 0;
+}
+
+  .logo-footer {
+    margin-right: 302px;
+  }
+  .nav-footer {
+    margin-bottom: 125px;
+  }
+
+  .nav-address {
+    width: auto;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .address-footer-text {
+    width: 215px;
+  }
+  
+  .list-link-footer {
+    margin-right: 120px;
+  }
+}
