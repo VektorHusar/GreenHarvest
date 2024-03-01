@@ -11,7 +11,6 @@
 .logo-link-footer {
   display: flex;
   align-items: center;
-  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   gap: 8px;
@@ -85,14 +84,19 @@
   fill: var(--main-text-color);
 }
 
+.item-link-footer:hover, .item-link-footer:focus {
+  color: var(--sec-text-color);
+
+}
+
 @media screen and (min-width: 768px) {
   .logo-footer {
     width: 265px;
-    font-size: 16px;
     line-height: 1.25;
   }
 
   .logo-link-footer {
+    font-size: 18px;
     margin-bottom: 25px;
   }
 
