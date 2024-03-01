@@ -86,7 +86,6 @@
 
   .vegetables-card-title {
     font-size: 32px;
-    margin-bottom: 13px;
   }
 
   .vegetables-card-price {
@@ -101,7 +100,7 @@
   }
 
   .vegetables-list {
-    gap: 28px 20px;
+    gap: 28px 21px;
   }
 
   .vegetables-list-item {
@@ -111,9 +110,5 @@
   .vegetables-card {
     padding-left: 32px;
     padding-right: 32px;
-  }
-
-  .vegetables-card-title {
-    margin-bottom: 12px;
   }
 }
