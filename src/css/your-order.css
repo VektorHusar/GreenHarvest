@@ -20,7 +20,7 @@ textarea {
 }
 
 .your-order-title-span {
-    color: rgba(251, 251, 251, 0.30);
+    color: rgba(251, 251, 251, 0.3);
 }
 
 .your-order-text {
@@ -63,11 +63,11 @@ textarea {
 .form-input {
     padding: 14px 0 14px 16px;
     border-radius: 30px;
-    border: 1px solid rgba(20, 20, 20, 0.20);
+    border: 1px solid rgba(20, 20, 20, 0.2);
     background-color: transparent;
     outline: transparent;
     width: 100%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus,
@@ -122,7 +122,7 @@ textarea::placeholder {
 
 .textarea-input {
     border-radius: 15px;
-    border: 1px solid rgba(20, 20, 20, 0.20);
+    border: 1px solid rgba(20, 20, 20, 0.2);
     width: 100%;
     resize: none;
     background-color: transparent;
@@ -169,11 +169,15 @@ textarea::placeholder {
 
 .its-border {
     border-radius: 15px;
-    background: linear-gradient(0deg, rgba(20, 20, 20, 0.30) 0%, rgba(20, 20, 20, 0.30) 100%), url(<path-to-image>), lightgray -22.226px -131.44px / 126.966% 163.736% no-repeat;
+    background: linear-gradient(0deg,
+            rgba(20, 20, 20, 0.3) 0%,
+            rgba(20, 20, 20, 0.3) 100%),
+        url(<path-to-image>),
+        lightgray -22.226px -131.44px / 126.966% 163.736% no-repeat;
 }
 
 .follows-text {
-    color: rgba(251, 251, 251, 0.50);
+    color: rgba(251, 251, 251, 0.5);
     font-size: 14px;
     font-weight: 600;
     line-height: 1.28;
@@ -202,8 +206,7 @@ textarea::placeholder {
     color: var(--sec-text-color);
 }
 
-@media screen and (min-width:768px) {
-
+@media screen and (min-width: 768px) {
     .your-order-title {
         max-width: 640px;
         font-size: 64px;
@@ -232,12 +235,13 @@ textarea::placeholder {
     }
 
     .form-title {
-        max-width: 100%;
+        width: 100%;
         margin-bottom: 50px;
     }
 
-    .form-input {
-        padding: 16px;
+    .form-title {
+        max-width: 100%;
+        margin-bottom: 50px;
     }
 
     input::placeholder,
@@ -283,8 +287,7 @@ textarea::placeholder {
     }
 }
 
-@media screen and (min-width:1280px) {
-
+@media screen and (min-width: 1280px) {
     .title-box {
         padding: 0;
     }
@@ -295,6 +298,12 @@ textarea::placeholder {
 
     .your-order-text {
         max-width: 742px;
+    }
+
+    .form-and-follows {
+        flex-direction: row;
+        gap: 24px;
+        padding: 0;
     }
 
     .form-and-follows {
