@@ -57,18 +57,41 @@
 }
 div.is-open {
   display: flex;
+  animation: isOpen 0.5s ease-in-out forwards;
+}
+@keyframes isOpen {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+div.is-close {
+  display: flex;
+  animation: isClose 0.5s ease-in-out forwards;
+}
+@keyframes isClose {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+    display: none;
+  }
 }
 .bg-mobile-navigation-container {
   display: none;
   position: fixed;
   width: 100vw;
   height: 100vh;
+  transform: translateX(100%);
   justify-content: center;
   z-index: 98;
   background: var(--sec-bg-color);
-  transition: transform 2s ease-in-out;
 }
 .mobile-navigation-container {
+  display: none;
   position: relative;
   top: 0;
   height: 100vh;
