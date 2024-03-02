@@ -3,11 +3,9 @@ const mobileNavigation = document.getElementById('view-mobile-navigation');
 const mobileNavigationCloseMenuSvg = document.getElementById('btn-close');
 
 headerOpenMenuSvg.addEventListener('click', function () {
-  mobileNavigation.classList.remove('is-close');
-  mobileNavigation.classList.add('is-open');
+  mobileNavigation.style.transform = 'translateX(-100%)';
 });
 
 mobileNavigationCloseMenuSvg.addEventListener('click', function () {
-  mobileNavigation.classList.remove('is-open');
-  mobileNavigation.classList.add('is-close');
+  mobileNavigation.style.transform = 'translateX(100%)';
 });
