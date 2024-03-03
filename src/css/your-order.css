@@ -315,10 +315,22 @@ textarea::placeholder {
 }
 /* -----thank-you-------- */
 
-.bg-thank-you.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+.thank-you {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  max-height: 308px;
+  padding: 60px 20px 50px;
+  border-radius: 30px;
+  background: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg-thank-you {
@@ -338,21 +350,12 @@ textarea::placeholder {
   right: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 20;
 }
 
-.thank-you {
-  position: absolute;
-  max-width: 300px;
-  max-height: 308px;
-  padding: 60px 20px 50px;
-  border-radius: 30px;
-  background: #fbfbfb;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.thank-you.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 99;
 }
 
 .close-thank-you {
@@ -399,8 +402,9 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 768px) {
-  .thank-you {
+  .thank-you.active {
     max-width: 528px;
+    width: unset;
     padding: 75px 75px 85px;
   }
 
@@ -420,7 +424,7 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 1280px) {
-  .thank-you {
+  .thank-you.active {
     max-width: 528px;
     padding: 75px 75px 85px;
   }
