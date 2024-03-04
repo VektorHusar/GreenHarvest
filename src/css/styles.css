@@ -14,7 +14,7 @@
 @import url('./reviews.css');
 @import url('./your-order.css');
 @import url('./footer.css');
-
+@import url('./modal-team.css');
 :root {
   font-family: 'Inter Tight', Helvetica, Arial, sans-serif;
   font-size: 16px;

@@ -7,7 +7,23 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollSection = document.querySelector('#your-order'),
     cookiesClose = document.querySelectorAll('.cookies-close'),
     cookiesOpen = document.querySelector('.cookies-open'),
-    cookiesOverlay = document.querySelector('.backdrop-cookies');
+    cookiesOverlay = document.querySelector('.backdrop-cookies'),
+    teamClose = document.querySelectorAll('.svg-team-close'),
+    teamOpen = document.querySelector('.development-team-btn'),
+    teamOverlay = document.querySelector('.modal-team');
+
+  teamClose.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      teamOverlay.classList.remove('is-open');
+    });
+  });
+
+  teamOpen.addEventListener('click', function (e) {
+    e.preventDefault();
+    teamOverlay.classList.add('is-open');
+  });
 
   cookiesClose.forEach(function (item) {
     item.addEventListener('click', function (e) {
