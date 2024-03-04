@@ -4,7 +4,23 @@ document.addEventListener('DOMContentLoaded', function () {
     closeButtons = document.querySelectorAll('.js-modal-close'),
     form = document.querySelector('form'),
     scrollButton = document.querySelector('.scroll-button'),
-    scrollSection = document.querySelector('#your-order');
+    scrollSection = document.querySelector('#your-order'),
+    cookiesClose = document.querySelectorAll('.cookies-close'),
+    cookiesOpen = document.querySelector('.cookies-open'),
+    cookiesOverlay = document.querySelector('.backdrop-cookies');
+
+  cookiesClose.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      cookiesOverlay.classList.add('is-hidden');
+    });
+  });
+
+  cookiesOpen.addEventListener('click', function (e) {
+    e.preventDefault();
+    cookiesOverlay.classList.remove('is-hidden');
+  });
 
   modalButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
