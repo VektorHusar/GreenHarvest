@@ -7,7 +7,7 @@
       rgba(20, 20, 20, 0.2) 0%,
       rgba(20, 20, 20, 0.2) 100%
     ),
-    url(../img/hero/vegetables-image3-mob-1x.jpg);
+    url(../img/hero/vegetables-image3-mob-1x.webp);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 375px 370px;
@@ -47,7 +47,7 @@
         rgba(20, 20, 20, 0.2) 0%,
         rgba(20, 20, 20, 0.2) 100%
       ),
-      url(../img/hero/vegetables-image3-tablet-1x.jpg);
+      url(../img/hero/vegetables-image3-tablet-1x.webp);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 768px 539px;
@@ -93,7 +93,7 @@
         rgba(20, 20, 20, 0.2) 0%,
         rgba(20, 20, 20, 0.2) 100%
       ),
-      url(../img/hero/vegetables-image3-1x.jpg);
+      url(../img/hero/vegetables-image3-1x.webp);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 650px 800px;
@@ -132,7 +132,7 @@
         rgba(20, 20, 20, 0.2),
         rgba(20, 20, 20, 0.2)
       ),
-      url(../img/hero/vegetables-image3-mob-2x.jpg);
+      url(../img/hero/vegetables-image3-mob-2x.webp);
   }
 }
 
@@ -143,7 +143,7 @@
         rgba(20, 20, 20, 0.2),
         rgba(20, 20, 20, 0.2)
       ),
-      url(../img/hero/vegetables-image3-tablet-2x.jpg);
+      url(../img/hero/vegetables-image3-tablet-2x.webp);
   }
 }
 
@@ -157,6 +157,6 @@
         rgba(20, 20, 20, 0.2),
         rgba(20, 20, 20, 0.2)
       ),
-      url(../img/hero/vegetables-image3-2x.jpg);
+      url(../img/hero/vegetables-image3-2x.webp);
   }
 }
