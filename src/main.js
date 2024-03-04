@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       modalElem.classList.add('active');
       overlay.classList.add('active');
-      document.documentElement.style.overflowY = 'hidden';
     });
   });
 
@@ -44,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
-      document.documentElement.style.overflowY = 'scroll';
     });
   });
 
@@ -56,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
       if (key == 27) {
         document.querySelector('.modal.active').classList.remove('active');
         document.querySelector('.overlay').classList.remove('active');
-        document.documentElement.style.overflowY = 'scroll';
       }
     },
     false
@@ -70,12 +67,10 @@ document.addEventListener('DOMContentLoaded', function () {
     ) {
       document.querySelector('.modal.active').classList.remove('active');
       this.classList.remove('active');
-      document.documentElement.style.overflowY = 'scroll';
     } else if (e.target.closest('.scroll-button')) {
       scrollSection.scrollIntoView({ behavior: 'smooth' });
       document.querySelector('.modal.active').classList.remove('active');
       this.classList.remove('active');
-      document.documentElement.style.overflowY = 'scroll';
     }
   });
   scrollButton.addEventListener('click', function (event) {
@@ -89,6 +84,5 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay.classList.add('active');
     form.reset();
     event.preventDefault();
-    document.documentElement.style.overflowY = 'hidden';
   });
 });
