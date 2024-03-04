@@ -2,6 +2,7 @@
   background-color: var(--sec-bg-color);
   padding: 32px 0;
   color: var(--main-text-color);
+  position: relative;
 }
 
 .logo-footer {
@@ -18,7 +19,7 @@
   fill: var(--main-text-color);
 }
 .logo-link-footer:hover {
-  fill: var(--sec-text-color);
+  fill: var(--main-bg-color);
 }
 
 .logo-footer-text {
@@ -72,6 +73,7 @@
   line-height: 1.33;
   letter-spacing: -0.01em;
   color: rgba(251, 251, 251, 0.5);
+  margin-bottom: 30px;
 }
 
 .privacy-policy-links {
@@ -169,6 +171,7 @@ footer a:focus {
   color: rgba(251, 251, 251, 0.5);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 @media screen and (min-width: 768px) {
   .logo-footer {
     width: 265px;
@@ -274,4 +277,33 @@ footer a:focus {
     width: 150px;
     padding: 15px;
   }
+}
+
+.development-team {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--sec-bg-color);
+}
+
+.development-team-btn {
+  background-color: transparent;
+  overflow: transparent;
+  border: 2px solid rgba(251, 251, 251, 0.5);
+  border-radius: 30px;
+  color: rgba(251, 251, 251, 0.5);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.015em;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.development-team-btn:hover {
+  border: 2px solid var(--main-bg-color);
+  color: var(--main-bg-color);
 }
