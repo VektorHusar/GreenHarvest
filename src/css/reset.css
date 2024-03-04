@@ -1,5 +1,6 @@
 /* Reset styles */
 html {
+  overflow-y: hidden;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
 }
