@@ -82,9 +82,8 @@ img {
   align-items: center;
   background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .mentor {
   display: flex;
   justify-content: center;
@@ -95,17 +94,18 @@ img {
   display: flex;
   justify-content: center;
 }
-.lead-box {
-}
 .lead-list {
   display: flex;
+  flex-direction: column;
 
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 20px;
 }
 .lead-item {
+  order: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,6 +121,10 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   padding-bottom: 20px;
 }
+
+.lead-item:nth-child(2) {
+  order: 0;
+}
 .team-title {
   text-align: center;
   color: #7a3145;
@@ -133,8 +137,6 @@ img {
   align-items: center;
   /* gap: 54px 24px; */
   gap: 24px;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 .team-item {
   display: flex;
@@ -187,8 +189,7 @@ img {
 .it-hub {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .title-project {
   border-radius: 15px;
@@ -199,7 +200,6 @@ img {
 }
 .title-harvest {
   border-radius: 15px;
-  margin-bottom: 30px;
 }
 .title-harvest-text {
   color: #576f35;
@@ -213,6 +213,11 @@ img {
   }
   .lead-list {
     flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .lead-item:nth-child(2) {
+    order: 1;
   }
 }
 

@@ -169,13 +169,6 @@ textarea::placeholder {
 
 .its-border {
   border-radius: 15px;
-  background: linear-gradient(
-      0deg,
-      rgba(20, 20, 20, 0.3) 0%,
-      rgba(20, 20, 20, 0.3) 100%
-    ),
-    url(<path-to-image>),
-    lightgray -22.226px -131.44px / 126.966% 163.736% no-repeat;
 }
 
 .follows-text {
