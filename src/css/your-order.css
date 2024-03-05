@@ -67,11 +67,13 @@ textarea {
   background-color: transparent;
   outline: transparent;
   width: 100%;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus,
-.textarea-input:focus {
+.textarea-input:focus,
+.form-input:hover,
+.textarea-input:hover {
   border-color: var(--sec-bg-color);
 }
 
@@ -218,9 +220,8 @@ textarea::placeholder {
 
   .form-and-follows {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    padding: 0 38px;
   }
 
   .form-box {
