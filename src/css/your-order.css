@@ -5,6 +5,7 @@ textarea {
   font-size: inherit;
 }
 
+/*  */
 .your-order {
   background-color: var(--sec-bg-color);
 }
@@ -101,11 +102,11 @@ textarea {
   color: red;
 }
 
-.form-input:not(:placeholder-shown):valid ~ .text-valid {
+.form-input:not(:placeholder-shown):valid~.text-valid {
   display: block;
 }
 
-.form-input:not(:placeholder-shown):invalid ~ .text-invalid {
+.form-input:not(:placeholder-shown):invalid~.text-invalid {
   display: block;
 }
 
@@ -307,6 +308,7 @@ textarea::placeholder {
     padding: 0;
   }
 }
+
 /* -----thank-you-------- */
 
 .thank-you {
